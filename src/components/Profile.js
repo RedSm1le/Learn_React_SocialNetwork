@@ -4,7 +4,7 @@ const Profile = () => {
     return(
         <div className="content">
             <div>
-                <img
+                <img alt='img'
                     src="https://builtin.com/sites/default/files/styles/ckeditor_optimize/public/inline-images/functional-new-programming-languages.jpg"/>
             </div>
             <div>ava + description</div>
