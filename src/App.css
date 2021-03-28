@@ -9,26 +9,4 @@
             "h h h h h"
             "n c c c c";
 }
-.header img {
-    width:  80px;
-}
-.content img {
-    width: 100%;
-    height: 150px;
-    margin-bottom: 10px ;
-}
-.header{
-    background-color: #3b5998;
-    grid-area: h;
 
-}
-.nav{
-    background-color: #eef5ff;
-    grid-area: n;
-
-}
-.content{
-    background-color: #eef5ff;
-    grid-area: c;
-
-}
