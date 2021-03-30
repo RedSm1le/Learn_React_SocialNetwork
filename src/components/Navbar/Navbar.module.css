@@ -1,5 +1,14 @@
 .nav {
     background-color: #eef5ff;
     grid-area: n;
+    padding: 20px;
+}
 
+.nav a {
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.nav a.active {
+    color: gold;
 }
