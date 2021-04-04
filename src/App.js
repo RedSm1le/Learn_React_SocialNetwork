@@ -11,10 +11,10 @@ const App = (props) => {
         <BrowserRouter>
             <div className="app-wrapper">
                 <Header/>
-                <Navbar/>
+                <Navbar navbarPage={props.state.navbarPage}/>
                 <div className="app-wrapper-content">
-                    <Route path="/dialogs" render={()=> <Dialogs dialogsData={props.dialogsData} messageData={props.messageData} />}/>
-                    <Route path="/profile" render={()=> <Profile postData={props.postData}/>}/>
+                    <Route path="/dialogs" render={()=> <Dialogs dialogsPage={props.state.dialogsPage} />}/>
+                    <Route path="/profile" render={()=> <Profile profilePage={props.state.profilePage}/>}/>
                 </div>
             </div>
         </BrowserRouter>
