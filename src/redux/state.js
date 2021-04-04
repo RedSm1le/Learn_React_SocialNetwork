@@ -1,10 +1,12 @@
+import {rerenderEntireTree} from "../render";
+
 let state = {
-    navbarPage:{
-        friendsData:[
-            {id:1,name:"Masha"},
-            {id:2,name:"Sveta"},
-            {id:2,name:"Dima"},
-            {id:3,name:"Yana"}
+    navbarPage: {
+        friendsData: [
+            {id: 1, name: "Masha"},
+            {id: 2, name: "Sveta"},
+            {id: 2, name: "Dima"},
+            {id: 3, name: "Yana"}
         ]
     },
     profilePage: {
@@ -28,8 +30,14 @@ let state = {
             {id: 3, message: "YO!!!"}
         ]
     }
-
-
 }
-
+export let addPost = (postMessage) => {
+    let newPost = {
+        id: 5,
+        message: postMessage,
+        likesCount: 0
+    }
+    state.profilePage.postData.push(newPost)
+    rerenderEntireTree(state)
+}
 export default state
